@@ -1,6 +1,9 @@
 /* JavaScript code here */
 console.log("Police");
 
+/* JavaScript code here */
+console.log("Police");
+
 var arr = [2,4,6,8];
 
 var sum = (a) => {
@@ -8,7 +11,7 @@ var sum = (a) => {
     for(var i=0;i<a.length;i++){
         x+=a[i];
     }
-    return x;
+    return (mul)=>{return x*mul;};
 };
 
-console.log(sum(arr));
+console.log(sum(arr)(5));
