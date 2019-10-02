@@ -15,3 +15,10 @@ var sum = (a) => {
 };
 
 console.log(sum(arr)(5));
+
+function check_mail(email){
+    var regex = /^\w+([.-]?\w+)@\w+([.-]?\w+)(.\w{2,3})+$/;
+    return regex.test(email);
+}
+
+console.log(check_mail("asdw@.com"));
