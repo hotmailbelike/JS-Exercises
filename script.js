@@ -22,3 +22,37 @@ function check_mail(email){
 }
 
 console.log(check_mail("asdw@.com"));
+
+// Task 4:
+var library = [
+    {
+        author: 'Bill Gates',
+        title: 'The Road Ahead',
+        readingStatus: true,
+        update_status: function(read){
+            this.readingStatus = read;
+        }
+    },
+    {
+        author: 'Steve Jobs',
+        title: 'Walter Isaacson',
+        readingStatus: true,
+        update_status: function(read){
+            this.readingStatus = read;
+        }
+    },
+    {
+        author: 'Suzanne Collins',
+        title:  'Mockingjay: The Final Book of The Hunger Games', 
+        readingStatus: false,
+        update_status: function(read){
+            this.readingStatus = read;
+        }
+    }];
+
+    function get_status(obj,index){
+        return obj[index].readingStatus;
+    }
+
+    library[1].update_status(false);
+    console.log(get_status(library,1));
