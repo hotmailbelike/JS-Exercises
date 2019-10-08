@@ -122,8 +122,30 @@ function findByName(name){
   return temp;
 }
 
+function findByName2(name){
+	var temp = [];
+	cart.forEach(i =>{
+    if(i['name'].includes(name)){
+      temp.push(i['name']);
+    }
+  });
+  return temp;
+}
+
+/*
+//Why is this not working???
+
+function findByName3(name){
+  var temp = cart.filter(i=>
+    i['name'].includes(name)
+  );
+}
+*/
+
 
 console.log(findByName('Socks'));
+console.log(findByName2('Socks'));
+// console.log(findByName3('Socks'));
 
 /*
 //Why is this not working???
